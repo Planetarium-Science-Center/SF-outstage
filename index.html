@@ -1,11 +1,9 @@
-<html>
- 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Table on Image</title>
+    <title>عروض المسرح الخارجي</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
@@ -14,38 +12,30 @@
       margin: 0;
       padding: 0;
       background-color: #381515;
-      display: flex;
       justify-content: center;
       align-items: center;
+      display:flex;
+      flex-direction: column;
       height: 100vh;
-    }
-        /* Ensure the container takes up the full viewport height */
-        .container {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-image: url('Papyrus.svg'); /* Replace with your image */
+       background-image: url('Papyrus.svg'); /* Replace with your image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-        }
-
+    }
+        
         /* Style the table and make it responsive */
         table {
             width: 90%;
             max-width: 800px;
-            border-collapse: collapse;
             text-align: center;
             line-height: 60px;
         }
 
         th, td {
             padding: 10px;
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
+            border: 2px solid #000;
         }
 
 
@@ -56,21 +46,20 @@
             }
 
             th, td {
-                font-size: 14px;
+                font-size: 18px;
                 padding: 8px;
             }
         }
 
         @media screen and (max-width: 480px) {
             th, td {
-                font-size: 12px;
+                font-size: 16px;
                 padding: 5px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
         <h1 style="direction: rtl; font-size: 40px;">مواعيد العروض</h1>
         <table>
             <tr>
@@ -109,9 +98,8 @@
               </td>
             </tr>
           </table>
-    </div>
+         
+          <br><img src="psc logo.svg" style="width: 40%;">
+
 </body>
 </html>
-
-
-
